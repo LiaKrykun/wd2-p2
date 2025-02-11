@@ -1,0 +1,35 @@
+:root{
+    --light-txt: rgb(182, 182, 182);
+    --brand-dark: #993247;
+    --d-grey: #403d3e;
+    --font-base: "Poppins", serif;
+    --transition: all 0.5s ease;
+}
+
+.poppins-thin {
+    font-weight: 100;
+    font-style: normal;
+}
+
+body{
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: black;
+    background-color: #f6f3f2;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+h1{
+    font-weight: 200;
+    font-size: 5rem;
+}
+
+nav li{
+    font-weight: 300;
+}
+
+footer{
+    color: white;
+}
