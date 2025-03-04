@@ -6,19 +6,28 @@
     --transition: all 0.5s ease;
 }
 
-.poppins-thin {
-    font-weight: 100;
-    font-style: normal;
-}
-
 body{
-    font-family: "Poppins", serif;
-    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
     font-style: normal;
     color: black;
     background-color: #f6f3f2;
     line-height: 1.5rem;
     font-size: 1.2rem;
+    margin: 0;
+}
+
+.txt-thin {
+    font-weight: 100;
+    font-style: normal;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 h1{
@@ -28,8 +37,4 @@ h1{
 
 nav li{
     font-weight: 300;
-}
-
-footer{
-    color: white;
 }
