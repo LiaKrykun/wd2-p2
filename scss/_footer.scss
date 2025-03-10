@@ -1,0 +1,61 @@
+@use 'vars' as *;
+@use 'mixins' as *;
+
+footer{
+background-color: $d-grey;
+color: white;
+display: grid;
+padding: 3rem;
+grid-template-columns:  minmax(25rem, 30rem) 1fr 1fr 1fr;
+grid-template-rows: minmax(auto, 25rem) 1fr;
+}
+
+footer h5{
+font-size: 1rem;
+font-weight: 200;
+}
+
+#form-subs{
+display: flex;
+flex-direction: column;
+max-width: 15em;
+gap: 1rem;
+}
+
+#footer-subs p{
+font-size: .55rem;
+font-weight: 200;
+line-height: .8rem;
+}
+
+#footer-subs a{
+color: #fff;
+}
+
+.footer-links{
+line-height: 2rem;
+}
+
+.footer-links li{
+list-style-type: none;
+}
+
+.footer-links li a{
+color: #fff;
+text-decoration: none;
+}
+
+#cert-logos img{
+margin: 0 .5rem;
+max-height: 3.2rem;
+}
+
+#copyrights{
+display: flex;
+gap: 1rem;
+grid-area: 2/4;
+}
+
+#copyrights p{
+font-size: .8rem;
+} 
