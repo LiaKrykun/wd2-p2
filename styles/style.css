@@ -86,3 +86,11 @@ footer h5{
     margin: 0 .5rem;
     max-height: 3.2rem;
 }
+#copyrights{
+    display: flex;
+    gap: 1rem;
+    grid-area: 2/4;
+}
+#copyrights p{
+    font-size: .8rem;
+}
