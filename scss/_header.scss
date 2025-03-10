@@ -1,0 +1,5 @@
+@use 'mixins' as *;
+
+nav ul{
+    @extend %simple-ul;
+}

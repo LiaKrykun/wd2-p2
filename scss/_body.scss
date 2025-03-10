@@ -1,0 +1,21 @@
+@use 'vars' as *;
+
+body{
+    font-family: $font-base;
+    font-weight: 200;
+    font-style: normal;
+    color: black;
+    background-color: $body-bg;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+.txt-thin {
+    font-weight: 100;
+}
+
