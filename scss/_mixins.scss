@@ -1,5 +1,34 @@
+@use 'vars' as *;
+
 // Placeholders
+
 %simple-ul{
     list-style-type: none;
     padding: 0;
+}
+
+
+@mixin section-header{
+    margin: 3rem 2rem 2rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100vw;
+    border-bottom: .5px solid $light-txt;
+}
+
+@mixin section-info{
+    font-weight: 100;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+@mixin flex-baseline{
+    display: flex;
+    align-items: first baseline;
+}
+
+@mixin desktop-hidden{
+    display: none;
 }

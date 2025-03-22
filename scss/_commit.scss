@@ -1,0 +1,65 @@
+@use 'vars' as *;
+@use 'mixins' as *;
+
+#commit{
+    background-image: url(/images/our-commitment-bg-mobile.WEBP);
+    background-size: cover;
+    height: 80vh;
+    background-position: 47% 80%;
+}
+
+.commit-txt{
+    padding: 1.5rem;
+    color: $d-grey;
+}
+
+.commit-txt p{
+    font-size: 1rem;
+}
+
+.commit-txt h2{
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 3rem;
+    margin: 0;
+}
+
+.commit-txt a{
+    color: $d-grey;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+// MEDIA QUERIES
+
+// TABLET
+
+@media (min-width: $tablet) {
+
+    #commit{
+        height: 90vh;
+    }
+    
+    .commit-txt p{
+        font-size: 1.2rem;
+        max-width: 25rem;
+    }
+    
+    .commit-txt h2{
+        font-size: 4rem;
+        line-height: 4rem;
+        max-width: 20rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+// DESKTOP
+
+@media (min-width: $desktop) {
+    #commit{
+        background-image: url(/images/our-commitment-bg.jpg);
+    }
+    .commit-txt{
+        padding: 4rem;
+    }
+}

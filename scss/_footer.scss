@@ -2,60 +2,227 @@
 @use 'mixins' as *;
 
 footer{
-background-color: $d-grey;
-color: white;
-display: grid;
-padding: 3rem;
-grid-template-columns:  minmax(25rem, 30rem) 1fr 1fr 1fr;
-grid-template-rows: minmax(auto, 25rem) 1fr;
+    background-color: $d-grey;
+    color: white;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
-footer h5{
-font-size: 1rem;
-font-weight: 200;
+#footer-sections{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1.5rem;
 }
 
-#form-subs{
-display: flex;
-flex-direction: column;
-max-width: 15em;
-gap: 1rem;
+// Footer INFO Sections
+
+
+#footer-info{
+    display: flex;
+    font-size: .8rem;
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
-#footer-subs p{
-font-size: .55rem;
-font-weight: 200;
-line-height: .8rem;
+#footer-info h4{
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0;
 }
 
-#footer-subs a{
-color: #fff;
+#footer-info ul{
+    padding: 0;
+    margin: 0;
 }
 
-.footer-links{
-line-height: 2rem;
+#footer-shop{
+    display: none;
 }
 
-.footer-links li{
-list-style-type: none;
+// Footer Links section
+
+.footer-info-links{
+    line-height: 2rem;
+    max-width: 8rem;
 }
 
-.footer-links li a{
+.footer-info-links ul li{
+    line-height: 1.4rem;
+    list-style-type: none;
+}
+
+.footer-info-links li a{
 color: #fff;
 text-decoration: none;
 }
 
+// Form for subscribe
+
+#footer-form-sect h5{
+    font-size: .8rem;
+    font-weight: 200;
+    max-width: 25em;
+}
+
+#footer-form-sect p{
+    font-size: .55rem;
+    font-weight: 200;
+    line-height: .8rem;
+    max-width: 20rem;
+}
+    
+#footer-form-sect a{
+    color: #fff;
+}
+
+#footer-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 15em;
+    gap: 1rem;
+}
+
+input{
+    background-color: $d-grey;
+    color: white;
+    border: none;
+    border-bottom: .1px solid white;
+} 
+::placeholder {
+    color: white;
+    font-size: .7rem;
+    font-weight: 100;
+}
+
+input[type=submit]{
+    font-size: .9rem;
+    border-bottom: none;
+    width: 5rem;
+}
+
+// Certificates and Copyrights
+
+#cert-logos{
+    padding: 0 1.5rem;
+}
+
 #cert-logos img{
-margin: 0 .5rem;
-max-height: 3.2rem;
+    height: 2.5rem;
+    max-height: 3.2rem;
+    padding-right: 1rem;
 }
 
 #copyrights{
-display: flex;
-gap: 1rem;
-grid-area: 2/4;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 #copyrights p{
-font-size: .8rem;
+    font-size: .7rem;
+    padding-right: 1.5rem;
 } 
+
+// MEDIA QUERIES
+
+// TABLET
+
+@media (min-width:$tablet) {
+    #footer-form-sect{
+        max-width: 35vw;
+    }
+
+    #footer-form-sect h5{
+        font-size: 1rem;
+    }
+
+    #footer-form-sect p{
+        font-size: .8rem;
+        line-height: 1.2rem;
+        max-width: 20rem;
+    }
+
+    input[type=submit]{
+        font-size: 1.2rem;
+    }
+    
+    ::placeholder {
+        font-size: 1rem;
+    }
+    
+    #footer-sections{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        margin: 3rem 0;
+        align-items: first baseline;
+    }
+    
+    #footer-shop{
+        display: block;
+    }
+
+    #footer-info{
+        font-size: 1rem;
+        gap: 2.5rem;
+        margin: 0;
+    }
+    #footer-info h4{
+        font-size: 1.3rem;
+    }
+
+    .footer-info-links{
+        line-height: 2rem;
+    }
+
+    .footer-info-links ul li{
+        line-height: 2rem;
+    }
+    
+    .footer-docs{
+        @include flex-baseline;
+        justify-content: space-between;
+        margin-top: 7rem;
+    }
+
+    #copyrights{
+        padding: 0 1.5rem 1rem 1.5rem;
+    }
+
+    #copyrights p{
+        font-size: .9rem;
+    } 
+}
+
+// DESKTOP
+
+@media (min-width: $desktop) {
+    footer{
+        padding: 0 2rem;
+    }
+
+    #footer-sections{
+        gap: 15rem;
+    }
+
+    .footer-info-links{
+        line-height: 4rem;
+        min-width: 15vw;
+    }
+
+    .footer-info-links ul li{
+        line-height: 2.5rem;
+    }
+
+    #footer-form-sect{
+        max-width: 25vw;
+    }
+
+    #footer-form{
+        max-width: 25vw;
+    }
+
+    .footer-docs{
+        margin-top: 5rem;
+    }
+}

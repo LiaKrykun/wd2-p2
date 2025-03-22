@@ -1,0 +1,105 @@
+@use 'vars' as *;
+@use 'mixins' as *;
+
+#followus{
+  height: 17rem;
+  color: $d-grey;
+}
+
+#followus-info {
+  @include section-header;
+}
+
+#followus-info h4, 
+#followus-info p {
+  @include section-info;
+}
+
+#followus-info h4{
+  font-size: 1.5rem;
+}
+
+#followus-info p{
+  font-size: 1rem;
+}
+
+#followus-gallery {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+// SCROLL ANIMATION
+
+.followus-gallery-wrapper {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Reverse Animation */
+.reverse {
+  animation-direction: reverse;
+}
+
+// IMG SIZING
+
+.followus-gallery-img {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.followus-gallery-img img {
+  max-height: 150px;
+  display: block;
+}
+
+// MEDIA QUERIES
+
+// TABLET
+
+@media (min-width: $tablet) {
+
+  .followus-gallery-img img {
+    max-height: 250px;
+  }
+
+  #followus{
+    height: 30rem;
+  }
+
+  #followus-info{
+    margin-bottom: 6rem;
+  }
+
+  #followus-info h4{
+    font-size: 2rem;
+  }
+
+  #followus-info p{
+    font-size: 1.5rem;
+  }
+}
+
+// DESKTOP
+
+@media (min-width: $desktop) {
+
+  #followus-info {
+    margin: 6rem 4rem 4rem;
+  }
+
+  #followus-info h4{
+    font-size: 2.5rem;
+  }
+
+}
