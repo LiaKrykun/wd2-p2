@@ -1,0 +1,163 @@
+@use 'vars' as *;
+@use 'mixins' as *;
+
+#journal{
+    color: $d-grey;
+}
+
+#journal-info{
+    @include section-header;
+}
+
+#journal-info h4, 
+#journal-info p {
+    @include section-info;
+}
+
+#journal-info h4{
+    font-size: 1.5rem;
+}
+
+// Journal Cards
+
+.journal-cards-container {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.journal-cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+.journal-cards {
+    display: flex;
+    height: 80vh;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.journal-card-item {
+    flex: 0 0 auto;
+    margin-bottom: 2rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.journal-card-item img {
+    width: 20rem;
+}
+
+.journal-card-txt{
+    margin-top: 1rem;
+}
+
+.journal-card-item p{
+    font-size: .9rem;
+    margin: 0;
+}
+
+.journal-card-item h5{
+    font-weight: 100;
+    margin: 0;
+}
+
+.read-more-btn{
+    border: 1px solid $d-grey;
+    color: $d-grey;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+// MEDIA QUERIES
+
+// TABLET
+
+@media (min-width: $tablet){
+
+    #journal-info h4{
+        font-size: 2rem;
+    }
+
+    #journal-info p{
+        font-size: 1.5rem;
+    }
+
+    .journal-cards {
+        gap: 2.5rem; 
+        height: 60vh;
+        margin-bottom: 5rem;
+        padding-left: 2rem;
+    }
+
+    .journal-card-item {
+        width: 20rem;
+    }
+
+    .journal-card-item img {
+        width: 20rem;
+    }
+    
+    .journal-card-item h5{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    .read-more-btn{
+        padding: 10px 0;
+    }
+}
+
+// DESKTOP
+
+@media(min-width: $desktop){
+
+    .hidden{
+        @include desktop-hidden;
+    }
+    
+    #journal-info h4{
+        font-size: 2.5rem;
+    }
+
+    #journal-info {
+        margin: 6rem 4rem 4rem;
+    }
+
+    .journal-cards {
+        gap: 2rem; 
+        height: 80vh;
+        margin: 0 4rem 5rem;
+        justify-content: center;
+    }
+
+    .journal-card-item {
+        width: 30vw;
+        margin: 0;
+    }
+
+    .journal-card-item img {
+        height: 55vh;
+        width: auto;
+        object-fit: cover;
+    }
+
+    .read-more-btn{
+        font-size: .8rem;
+        display: none;
+    }
+
+    .journal-card-item:hover{
+        .read-more-btn{
+            display: block;
+        }
+    }
+    
+}
