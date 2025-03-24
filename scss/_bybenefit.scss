@@ -1,17 +1,15 @@
 @use "vars";
 
-* {
+.benefits-section * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  body {
+
+  .benefits-section {
     font-family: "Inter", sans-serif;
     background-color: #fafafa;
-  }
-  
-  .benefits-section {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;

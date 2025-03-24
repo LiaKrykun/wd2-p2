@@ -389,14 +389,10 @@ nav ul {
   padding: 0;
 }
 
-/* Reset and base styles */
-* {
+#product {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: "Inter", sans-serif;
   background-color: #f8f9fa;
   min-height: 100vh;
@@ -406,12 +402,10 @@ body {
 }
 
 /* Product showcase styles */
-.product-showcase {
+.product-showcase * {
+  min-height: 100vh;
   width: 100%;
   padding: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .product-container {
@@ -446,7 +440,7 @@ body {
   border-radius: 999px;
   font-size: 12px;
   font-weight: 500;
-  color: #1a1a1a;
+  color: #000000;
 }
 
 .hero-image {
@@ -757,18 +751,15 @@ body {
     font-size: 12px;
   }
 }
-* {
+.benefits-section * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+.benefits-section {
   font-family: "Inter", sans-serif;
   background-color: #fafafa;
-}
-
-.benefits-section {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
