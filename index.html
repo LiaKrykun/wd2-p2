@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"/>
+
 </head>
 <body>
     <!-- Vince -->
@@ -30,13 +32,204 @@
         </section>
 
         <!-- Taylor -->
-        <section id="bestsellers">
+        <section class="featured-products">
+            <div class="featured-container">
+              <header class="featured-header">
+                <h2 class="featured-title">Best Sellers</h2>
+                <div class="navigation-buttons">
+                  <button class="nav-button prev-button" aria-label="Previous products">
+                    ←
+                  </button>
+                  <button class="nav-button next-button" aria-label="Next products">
+                    →
+                  </button>
+                </div>
+              </header>
+              <div class="products-slider-container">
+                <div class="products-slider">
+                  <article class="product-card">
+                    <div class="product-image-container">
+                      <img
+                        src="Images/best-seller-01.webp"
+                        alt="Protein & Organic Greens"
+                        class="product-image"
+                      />
+                      <div class="image-overlay"></div>
+                    </div>
+                    <div class="product-content">
+                      <div class="product-header">
+                        <h3 class="product-title">
+                            <!--Product 1 -->
+                          Protein & Organic Greens + Probiotics
+                        </h3>
+                        <p class="product-price">$67</p>
+                      </div>
+                      <p class="product-description">480g powder</p>
+                    </div>
+                    <div class="product-actions">
+                      <button class="action-button primary">Add to Cart</button>
+                      <button class="action-button secondary">Learn More</button>
+                    </div>
+                  </article>
+          
+                  <article class="product-card">
+                    <div class="product-image-container">
+                      <img
+                        src="images/best-seller-02.webp"
+                        alt="Happy Days"
+                        class="product-image"
+                      />
+                      <div class="image-overlay"></div>
+                    </div>
+                    <div class="product-content">
+                      <div class="product-header">
+                        <!--Product 2 -->
+                        <h3 class="product-title">Happy Days</h3>
+                        <p class="product-price">$64</p>
+                      </div>
+                      <p class="product-description">
+                        60 Vege Capsules
+                      </p>
+                    </div>
+                    <div class="product-actions">
+                      <button class="action-button primary">Add to Cart</button>
+                      <button class="action-button secondary">Learn More</button>
+                    </div>
+                  </article>
+          
+                  <article class="product-card">
+                    <div class="product-image-container">
+                      <img
+                        src="images/best-seller-03.webp"
+                        alt="Happy Gut"
+                        class="product-image"
+                      />
+                      <div class="image-overlay"></div>
+                    </div>
+                    <div class="product-content">
+                      <div class="product-header">
+                        <!--Product 3 -->
+                        <h3 class="product-title">Happy Gut</h3>
+                        <p class="product-price">$69.95</p>
+                      </div>
+                      <p class="product-description">
+                        240g Powder
+                      </p>
+                    </div>
+                    <div class="product-actions">
+                      <button class="action-button primary">Add to Cart</button>
+                      <button class="action-button secondary">Learn More</button>
+                    </div>
+                  </article>
+          
+                  <article class="product-card">
+                    <div class="product-image-container">
+                      <img
+                        src="images/best-seller-04.webp"
+                        alt="Marine Collagen Capsules"
+                        class="product-image"
+                      />
+                      <div class="image-overlay"></div>
+                    </div>
+                    <div class="product-content">
+                      <div class="product-header">
+                        <!--Product 4 -->
+                        <h3 class="product-title">Marine Collagen Capsules</h3>
+                        <p class="product-price">$54</p>
+                      </div>
+                      <p class="product-description">
+                        60 Vege Capsules
+                      </p>
+                    </div>
+                    <div class="product-actions">
+                      <button class="action-button primary">Add to Cart</button>
+                      <button class="action-button secondary">Learn More</button>
+                    </div>
+                  </article>
 
-        </section>
-
-        <section id="bybenefit">
-
-        </section>
+                  <article class="product-card">
+                    <div class="product-image-container">
+                      <img
+                        src="images/best-seller-05.webp"
+                        alt="Marine Collagen Capsules"
+                        class="product-image"
+                      />
+                      <div class="image-overlay"></div>
+                    </div>
+                    <div class="product-content">
+                      <div class="product-header">
+                        <!--Product 5 -->
+                        <h3 class="product-title">Nightcap</h3>
+                        <p class="product-price">$59</p>
+                      </div>
+                      <p class="product-description">
+                        100ml Oral Liquid
+                      </p>
+                    </div>
+                    <div class="product-actions">
+                      <button class="action-button primary">Add to Cart</button>
+                      <button class="action-button secondary">Learn More</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="benefits-section">
+            <div class="container">
+              <div class="benefits-grid">
+                <div class="categories-container">
+                  <h2 class="section-title">Shop by Benefit</h2>
+                  <ul class="categories-list">
+                    <li
+                      class="category-item"
+                      data-image="images/ShopBy-Beauty.webp"
+                    >
+                      <article class="category-card">
+                        <h3 class="category-name">Beauty</h3>
+                        <button class="shop-now-btn">Shop Now</button>
+                      </article>
+                    </li>
+                    <li
+                      class="category-item"
+                      data-image="images/ShopBy-Sleep.webp"
+                    >
+                      <article class="category-card">
+                        <h3 class="category-name">Sleep</h3>
+                        <button class="shop-now-btn">Shop Now</button>
+                      </article>
+                    </li>
+                    <li
+                      class="category-item"
+                      data-image="images/ShopBy-Mood.webp"
+                    >
+                      <article class="category-card">
+                        <h3 class="category-name">Stress & Mood</h3>
+                        <button class="shop-now-btn">Shop Now</button>
+                      </article>
+                    </li>
+                    <li
+                      class="category-item"
+                      data-image="images/ShopBy-Gut.webp"
+                    >
+                      <article class="category-card">
+                        <h3 class="category-name">Gut Health</h3>
+                        <button class="shop-now-btn">Shop Now</button>
+                      </article>
+                    </li>
+                  </ul>
+                </div>
+                <div class="image-container">
+                  <img
+                    src="images/ShopByBenefit-Hero.webp"
+                    alt="Category Image"
+                    class="category-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
 
         <!-- Vince -->
         <section id="ingredients">
@@ -45,6 +238,40 @@
 
         <!-- Taylor -->
         <section id="product">
+            <div class="product-container">
+                <div class="product-grid">
+                  <section class="hero-section">
+                    <img
+                      src="images/brighter-skin-days.webp"
+                      alt="Image of a cocktail or elixir for better skin"
+                      class="hero-image"
+                    />
+                  </section>
+                  <section class="product-details">
+                    <div class="details-card">
+                      <h1 class="product-title">Brighter skin days ahead</h1>
+                      <p class="product-description">
+                        Skin Hydration Elixir is our advanced supplement that helps reduce
+                        hyperpigmentation, melasma, and other age-related skin concerns,
+                        this elixir provides optimal cellular health, promoting
+                        youthful-looking skin.
+                      </p>
+                      <ul class="tag-list">
+                        <li class="tag">Skin</li>
+                        <li class="tag">Hair</li>
+                        <li class="tag">Nails</li>
+                        <li class="tag">Anti-aging</li>
+                      </ul>
+                      <img
+                        src="images/bsd-card-img.webp"
+                        alt="Product image of suppplement"
+                        class="product-image"
+                      />
+                      <button class="cta-button">Shop Now</button>
+                    </div>
+                  </section>
+                </div>
+              </div>
 
         </section>
 
