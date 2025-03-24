@@ -1,0 +1,142 @@
+@use "vars";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+    background-color: #fafafa;
+  }
+  
+  .benefits-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: 100vw;
+    padding-top: 48px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+  
+  .categories-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: flex-start;
+    padding-top: 48px;
+  }
+  
+  .section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    list-style: none;
+  }
+  
+  .category-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .category-card:hover,
+  .category-card.active {
+    background-color: white;
+  }
+  
+  .category-name {
+    font-size: 48px;
+    font-weight: 500;
+    color: #333;
+    text-decoration-line: underline;
+  }
+  
+  .shop-now-btn {
+    padding: 8px 16px;
+    background: none;
+    border: 1px solid #333;
+    color: #333;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .category-card:hover .shop-now-btn,
+  .category-card.active .shop-now-btn {
+    opacity: 1;
+    transform: translateX(0);
+    background-color: #333;
+    color: white;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    margin-top: 100px;
+  }
+  
+  .category-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+    transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  @media (max-width: 1024px) {
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .image-container {
+      margin-top: 0;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .benefits-section {
+      padding-top: 24px;
+    }
+  
+    .image-container {
+      height: 300px;
+    }
+  
+    .section-title {
+      font-size: 12px;
+    }
+  }
+  
