@@ -1,0 +1,78 @@
+.home-hero img {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 7.5rem;
+    left: 0;
+    transform: none;
+    padding: 1.25rem 1.25rem 0 1.25rem;
+    color: #fff;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.hero-content h2{
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: -.05em;
+    margin-bottom: .9375rem;
+    max-width: 27.4375rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.0625rem;
+    line-height: 1.3125rem;
+    letter-spacing: -.02em;
+    max-width: 26.75rem;
+    font-weight: 300;
+    margin-bottom: 1.875rem;
+}
+
+.dot-button-hero {
+    display: flex;
+    align-items: center;
+    font-size: 1.0625rem;
+    line-height: 1.3125rem;
+    letter-spacing: -0.0313rem;
+    color: #fff;
+}
+
+.dot {
+    display: block;
+    width: .8125rem;
+    height: .8125rem;
+    background-color: #fff;
+    margin-right: .5rem;
+    border-radius: 50%;
+}
+
+
+@media (min-width:43.75em) {
+
+
+
+    .hero-content{
+        padding-left: 4.375rem;
+    }
+
+
+    .hero-content h2 {
+        max-width: 27.4375remz;
+        font-weight: 300;
+        font-size: 4.5rem;
+        line-height: 4.25rem;
+        letter-spacing: -.05em;
+        margin-bottom: 1.25rem;
+    }
+
+.heroImg{
+    content: url("/images/two-island-new-banner-1920x1200.webp");
+}
+}
