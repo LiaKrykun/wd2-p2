@@ -436,14 +436,11 @@
         <!-- Vince -->
         <section id="home">
             <div  class="home-hero">
-                <img  
-                src="images/two-island-new-banner-756x1392.webp"
-                        alt="Banner" id="hmbannerImg" class="heroImg"
-                        srcset="images/two-island-new-banner-756x1392.webp 700w,
-                        images/two-island-new-banner-1920x1200.webp 1000w"
-                        sizes="(max-width: 680px) 700px" 
-                        media="(max-width: 600px)"
-                        >
+ <picture id="hmbannerImg">
+  <source srcset="images/two-island-new-banner-756x1392.webp" media="(max-width: 699px)">
+  <source srcset="images/two-island-new-banner-1920x1200.webp" media="(min-width: 700px)">
+  <img src="images/two-island-new-banner-1920x1200.webp" alt="Home Banner">
+ </picture>
             </div>
             <div class="hero-content">
                 <h2>Passionfruit Mango Salt has arrived</h2>
