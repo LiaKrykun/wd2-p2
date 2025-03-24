@@ -833,14 +833,14 @@ header {
   top: 7.5rem;
   left: 0;
   transform: none;
-  padding: 1.25rem 1.25rem 0 1.25rem;
+  padding: 1.25rem 1.5rem 0 1.5rem;
   color: #fff;
   box-sizing: border-box;
   text-align: left;
 }
 
-.hero-content h2 {
-  font-size: 3rem;
+.hero-content h1 {
+  font-size: 2.5rem;
   line-height: 3rem;
   letter-spacing: -0.05em;
   margin-bottom: 0.9375rem;
@@ -876,20 +876,37 @@ header {
   border-radius: 50%;
 }
 
+.heroImg {
+  content: url("/images/two-island-new-banner-756x1392.webp");
+}
+
 @media (min-width: 43.75em) {
   .hero-content {
     padding-left: 4.375rem;
+    top: 15rem;
+    max-width: 20rem;
   }
-  .hero-content h2 {
-    max-width: 27.4375remz;
+  .hero-content h1 {
+    max-width: 27rem;
     font-weight: 300;
-    font-size: 4.5rem;
+    font-size: 3rem;
     line-height: 4.25rem;
     letter-spacing: -0.05em;
     margin-bottom: 1.25rem;
   }
   .heroImg {
     content: url("/images/two-island-new-banner-1920x1200.webp");
+  }
+}
+@media (min-width: 64em) {
+  .hero-content {
+    padding-left: 4.375rem;
+    top: 15rem;
+    max-width: 31rem;
+  }
+  .hero-content h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
   }
 }
 .new-product-intro {
@@ -1051,7 +1068,7 @@ header {
   justify-content: center;
   background-color: #ffffff;
   font-family: Inter, sans-serif;
-  padding: 24px;
+  padding: 0 1.5rem;
 }
 
 .featured-container {
@@ -1068,9 +1085,10 @@ header {
 }
 
 .featured-title {
+  padding: 0 2rem;
   font-size: 32px;
-  font-weight: 700;
-  color: #000000;
+  font-weight: 100;
+  color: #403d3e;
 }
 
 .navigation-buttons {
@@ -1270,7 +1288,6 @@ header {
 
 .benefits-section {
   font-family: "Inter", sans-serif;
-  background-color: #fafafa;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1308,9 +1325,13 @@ header {
 .categories-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 5px;
   width: 100%;
   list-style: none;
+}
+
+.categories-list li {
+  line-height: 3.5rem;
 }
 
 .category-card {
@@ -1395,7 +1416,7 @@ header {
   }
 }
 .ingredients {
-  padding: 4rem 0 4.375rem;
+  padding: 4rem 1.5rem 4.375rem;
   margin: 0;
 }
 
@@ -1523,29 +1544,21 @@ header {
 }
 #product {
   margin: 0;
-  padding: 0;
+  padding: 4rem 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  background-color: #f8f9fa;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Product showcase styles */
-.product-showcase * {
-  min-height: 100vh;
-  width: 100%;
-  padding: 32px;
-}
-
-.product-container {
+.elixir-container {
   width: 100%;
   max-width: 1200px;
 }
 
-.product-grid {
+.elixir-grid {
   padding-left: 2rem;
   display: flex;
   gap: 32px;
@@ -1582,7 +1595,7 @@ header {
 }
 
 /* Product details styles */
-.product-details {
+.elixir-details {
   flex: 1;
 }
 
@@ -1594,13 +1607,14 @@ header {
   gap: 24px;
 }
 
-.product-title {
-  font-size: 32px;
-  font-weight: bold;
-  color: #000000;
+.elixir-title {
+  font-size: 3rem;
+  color: #403d3e;
+  line-height: 1.2;
+  font-weight: 100;
 }
 
-.product-description {
+.elixir-description {
   font-size: 16px;
   line-height: 1.6;
   color: #666;
@@ -1622,7 +1636,7 @@ header {
   border-radius: 999px;
 }
 
-.product-image {
+.elixir-image {
   width: 100%;
 }
 
@@ -1645,18 +1659,15 @@ header {
 
 /* Responsive styles */
 @media (max-width: 1024px) {
-  .product-grid {
+  .elixir-grid {
     flex-direction: column;
   }
   .hero-section,
-  .product-details {
+  .elixir-details {
     width: 100%;
   }
 }
 @media (max-width: 640px) {
-  .product-showcase {
-    padding: 16px;
-  }
   .details-card {
     padding: 24px;
   }
@@ -1818,6 +1829,7 @@ header {
 }
 
 .commit-txt p {
+  padding: 0.5rem 0;
   font-size: 1rem;
 }
 
@@ -1832,6 +1844,21 @@ header {
   color: #403d3e;
   font-size: 1rem;
   font-weight: 400;
+}
+
+.dot-learn-more-btn {
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.dot-btn {
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  border: 5px solid #403d3e;
+  border-radius: 100%;
 }
 
 @media (min-width: 43.75em) {

@@ -1,30 +1,26 @@
+@use 'vars' as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+
 
 #product {
   margin: 0;
-  padding: 0;
+  padding: 4rem 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  background-color: #f8f9fa;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Product showcase styles */
-.product-showcase * {
-  min-height: 100vh;
-  width: 100%;
-  padding: 32px;
-}
-
-.product-container {
+.elixir-container {
   width: 100%;
   max-width: 1200px;
 }
 
-.product-grid {
+.elixir-grid {
     padding-left: 2rem;
   display: flex;
   gap: 32px;
@@ -61,7 +57,7 @@
 }
 
 /* Product details styles */
-.product-details {
+.elixir-details {
   flex: 1;
 }
 
@@ -73,13 +69,14 @@
   gap: 24px;
 }
 
-.product-title {
-  font-size: 32px;
-  font-weight: bold;
-  color: #000000;
+.elixir-title {
+  font-size: 3rem;
+  color: $d-grey;
+  line-height: 1.2;
+  font-weight: 100;
 }
 
-.product-description {
+.elixir-description {
   font-size: 16px;
   line-height: 1.6;
   color: #666;
@@ -101,7 +98,7 @@
   border-radius: 999px;
 }
 
-.product-image {
+.elixir-image {
   width: 100%;
 }
 
@@ -124,21 +121,17 @@
 
 /* Responsive styles */
 @media (max-width: 1024px) {
-  .product-grid {
+  .elixir-grid {
     flex-direction: column;
   }
 
   .hero-section,
-  .product-details {
+  .elixir-details {
     width: 100%;
   }
 }
 
 @media (max-width: 640px) {
-  .product-showcase {
-    padding: 16px;
-  }
-
   .details-card {
     padding: 24px;
   }

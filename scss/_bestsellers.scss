@@ -1,4 +1,4 @@
-@use "vars";
+@use 'vars' as *;
 
 .featured-products {
     display: flex;
@@ -8,7 +8,7 @@
     justify-content: center;
     background-color: #ffffff;
     font-family: Inter, sans-serif;
-    padding: 24px;
+    padding: 0 1.5rem;
   }
   
   .featured-container {
@@ -25,9 +25,10 @@
   }
   
   .featured-title {
+    padding: 0 2rem;
     font-size: 32px;
-    font-weight: 700;
-    color: #000000;
+    font-weight: 100;
+    color: $d-grey;
   }
   
   .navigation-buttons {

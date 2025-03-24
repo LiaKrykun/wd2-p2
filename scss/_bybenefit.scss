@@ -9,7 +9,6 @@
 
   .benefits-section {
     font-family: "Inter", sans-serif;
-    background-color: #fafafa;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -47,11 +46,15 @@
   .categories-list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 5px;
     width: 100%;
     list-style: none;
   }
   
+  .categories-list li{
+    line-height: 3.5rem;
+  }
+
   .category-card {
     display: flex;
     align-items: center;
