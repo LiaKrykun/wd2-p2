@@ -1025,7 +1025,7 @@ nav ul {
   }
 }
 #commit {
-  background-image: url(/images/our-commitment-bg-mobile.WEBP);
+  background-image: url(../images/our-commitment-bg-mobile.WEBP);
   background-size: cover;
   height: 80vh;
   background-position: 47% 80%;
@@ -1070,7 +1070,7 @@ nav ul {
 }
 @media (min-width: 64em) {
   #commit {
-    background-image: url(/images/our-commitment-bg.jpg);
+    background-image: url(../images/our-commitment-bg.jpg);
   }
   .commit-txt {
     padding: 4rem;

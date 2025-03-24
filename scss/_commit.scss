@@ -2,7 +2,7 @@
 @use 'mixins' as *;
 
 #commit{
-    background-image: url(/images/our-commitment-bg-mobile.WEBP);
+    background-image: url(../images/our-commitment-bg-mobile.WEBP);
     background-size: cover;
     height: 80vh;
     background-position: 47% 80%;
@@ -57,7 +57,7 @@
 
 @media (min-width: $desktop) {
     #commit{
-        background-image: url(/images/our-commitment-bg.jpg);
+        background-image: url(../images/our-commitment-bg.jpg);
     }
     .commit-txt{
         padding: 4rem;
